@@ -15,14 +15,17 @@ namespace ConditionalsLoopMethodsDemo
             Console.Write("Enter a range");
             int range = int.Parse(Console.ReadLine());
 
-            // TODO: Write the result by calling IsWithinRange
-            Console.WriteLine($"Given a starting number of: {startingNum} and a target number: {targetNum}. It's {IsWithinRange(startingNum, targetNum, range)}");
+            string results = IsWithinRange(startingNum, targetNum, range) ? "It's within range." : "It's not within range.";
+
+            // TODO: Print an appropriate string based upon the boolean results from IsWithinRange
+            Console.WriteLine($"Given a starting number of: {startingNum} and a target number: {targetNum}. " +
+                $"{results}");
         }
 
         // access modifier - static (no not) - return type - name(parms in here)
-        private static bool IsWithinRange(int num, int target, int range)
+        private static bool IsWithinRange(int starting, int target, int range)
         {
-            return (num - target) <= range;
+            return (starting - target) <= range;
         }
     }
 }
