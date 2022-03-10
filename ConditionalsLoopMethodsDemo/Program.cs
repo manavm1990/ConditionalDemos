@@ -33,7 +33,6 @@ namespace ConditionalsLoopMethodsDemo
         private static int PromptUser4Int(string message)
         {
             int result;
-            // TODO: While the user's input is not parse-able as an int, continue to ask them to comply.
             while(!int.TryParse(PromptUser(message), out result))
             {
                 PromptUser("Invalid Input! Press any key to continue");
