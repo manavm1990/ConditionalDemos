@@ -4,9 +4,10 @@ namespace ConditionalsLoopMethodsDemo
 {
     class MainClass
     {
-        public static void Main(string[] args)
+       static void Main()
         {
-            Console.WriteLine("Hello World!");
+            // TODO: Implement method to check if a number is in range of another number
+
         }
     }
 }
